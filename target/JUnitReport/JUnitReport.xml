@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="29.788">
+    <testcase classname="To test google search functionality" name="Validate google search is working" time="0.052">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given browser is open.......................................................undefined
+And user is on google search page...........................................skipped
+When a user enters a text in search box.....................................skipped
+And hits enter..............................................................skipped
+Then user is navigated to search results....................................skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Test login functionality." name="Check login is sucessful with valid credentials" time="29.078">
+        <system-out>
+            <![CDATA[Given browser is opened.....................................................passed
+And user is on login page...................................................passed
+When user enters username and password......................................passed
+And user clicks on login....................................................passed
+Then user is navigated to homepage..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Feature to test login functionality" name="Check login is sucessful with valid credentials" time="0.008">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given user is on login page.................................................failed
+When user enters username and password......................................skipped
+And clicks on login button..................................................skipped
+Then user is navigated to homepage..........................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.LoginDemoStepts.user_is_on_login_page(LoginDemoStepts.java:35)
+	at ✽.user is on login page(file:///home/mose/eclipse-workspace/CucumberJava/src/test/resources/Features/loginReal.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

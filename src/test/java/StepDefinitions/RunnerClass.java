@@ -9,8 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features",
 glue= {"StepDefinitions"}, monochrome = true, 
-plugin = {"pretty","html:target/HtmlReports/Htmlreports.html"},
-tags = "@SmokeTest")
+plugin = {"pretty","html:target/HtmlReports/Htmlreports.html", 
+		"junit:target/JUnitReport/JUnitReport.xml"}
+)
 
 public class RunnerClass {
 	
